@@ -25,4 +25,17 @@ public class TicketBookingRequestProcessorTests
         Assert.Equal(request.LastName, response.LastName);
         Assert.Equal(request.Email, response.Email);
     }
+
+    [Fact]
+    public void ShouldThrowExceptionIfRequestIsNull()
+    {
+        // Arrange
+        var processor = new TicketBookingRequestProcessor();
+
+        // Act
+        var exception = Assert.Throws<ArgumentNullException>(() => processor.Book(null));
+
+        // Assert
+        Assert.Equal("request", exception.ParamName);
+    }
 }
