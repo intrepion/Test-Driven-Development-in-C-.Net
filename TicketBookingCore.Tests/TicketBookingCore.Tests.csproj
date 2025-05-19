@@ -18,4 +18,8 @@
     <Using Include="Xunit" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\TicketBookingCore\TicketBookingCore.csproj" />
+  </ItemGroup>
+
 </Project>
