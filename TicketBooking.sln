@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicketBookingCore.Tests", "TicketBookingCore.Tests\TicketBookingCore.Tests.csproj", "{C97288BF-2049-418E-BB8D-053EF672DB83}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicketBookingCore", "TicketBookingCore\TicketBookingCore.csproj", "{A86C846F-BFC6-41CE-A205-FF3ADE2D69DD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,18 @@ Global
 		{C97288BF-2049-418E-BB8D-053EF672DB83}.Release|x64.Build.0 = Release|Any CPU
 		{C97288BF-2049-418E-BB8D-053EF672DB83}.Release|x86.ActiveCfg = Release|Any CPU
 		{C97288BF-2049-418E-BB8D-053EF672DB83}.Release|x86.Build.0 = Release|Any CPU
+		{A86C846F-BFC6-41CE-A205-FF3ADE2D69DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A86C846F-BFC6-41CE-A205-FF3ADE2D69DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A86C846F-BFC6-41CE-A205-FF3ADE2D69DD}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{A86C846F-BFC6-41CE-A205-FF3ADE2D69DD}.Debug|x64.Build.0 = Debug|Any CPU
+		{A86C846F-BFC6-41CE-A205-FF3ADE2D69DD}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{A86C846F-BFC6-41CE-A205-FF3ADE2D69DD}.Debug|x86.Build.0 = Debug|Any CPU
+		{A86C846F-BFC6-41CE-A205-FF3ADE2D69DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A86C846F-BFC6-41CE-A205-FF3ADE2D69DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A86C846F-BFC6-41CE-A205-FF3ADE2D69DD}.Release|x64.ActiveCfg = Release|Any CPU
+		{A86C846F-BFC6-41CE-A205-FF3ADE2D69DD}.Release|x64.Build.0 = Release|Any CPU
+		{A86C846F-BFC6-41CE-A205-FF3ADE2D69DD}.Release|x86.ActiveCfg = Release|Any CPU
+		{A86C846F-BFC6-41CE-A205-FF3ADE2D69DD}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
