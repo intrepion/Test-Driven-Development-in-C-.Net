@@ -3,12 +3,17 @@ namespace TicketBookingCore.Tests;
 
 public class TicketBookingRequestProcessorTests
 {
+    private readonly TicketBookingRequestProcessor _processor;
+
+    public TicketBookingRequestProcessorTests()
+    {
+        _processor = new TicketBookingRequestProcessor();
+    }
+
     [Fact]
     public void ShouldReturnTicketBookingResultWithRequestValues()
     {
         // Arrange
-        var processor = new TicketBookingRequestProcessor();
-
         var request = new TicketBookingRequest
         {
             FirstName = "Abdul",
@@ -17,7 +22,7 @@ public class TicketBookingRequestProcessorTests
         };
 
         // Act
-        TicketBookingResponse response = processor.Book(request);
+        TicketBookingResponse response = _processor.Book(request);
 
         // Assert
         Assert.NotNull(response);
@@ -29,11 +34,8 @@ public class TicketBookingRequestProcessorTests
     [Fact]
     public void ShouldThrowExceptionIfRequestIsNull()
     {
-        // Arrange
-        var processor = new TicketBookingRequestProcessor();
-
         // Act
-        var exception = Assert.Throws<ArgumentNullException>(() => processor.Book(null));
+        var exception = Assert.Throws<ArgumentNullException>(() => _processor.Book(null));
 
         // Assert
         Assert.Equal("request", exception.ParamName);
