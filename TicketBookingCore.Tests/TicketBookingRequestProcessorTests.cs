@@ -29,9 +29,9 @@ public class TicketBookingRequestProcessorTests
 
 internal class TicketBookingRequest
 {
-    public string FirstName { get; set; }
-    public string LastName { get; set; }
-    public string Email { get; set; }
+    public string FirstName { get; set; } = string.Empty;
+    public string LastName { get; set; } = string.Empty;
+    public string Email { get; set; } = string.Empty;
 }
 
 internal class TicketBookingRequestProcessor
@@ -42,13 +42,18 @@ internal class TicketBookingRequestProcessor
 
     internal TicketBookingResponse Book(TicketBookingRequest request)
     {
-      throw new NotImplementedException();
+        return new TicketBookingResponse
+        {
+            FirstName = request.FirstName,
+            LastName = request.LastName,
+            Email = request.Email
+        };
     }
 }
 
 internal class TicketBookingResponse
 {
-    public IAsyncEnumerable<char>? FirstName { get; internal set; }
-    public IAsyncEnumerable<char>? LastName { get; internal set; }
-    public IAsyncEnumerable<char>? Email { get; internal set; }
+    public string FirstName { get; set; } = string.Empty;
+    public string LastName { get; set; } = string.Empty;
+    public string Email { get; set; } = string.Empty;
 }
